@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schema test</title>
+  </head>
+  <body>
+    <h1>
+      Schema test
+    </h1>
+    <script type="application/ld+json">
+              {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "HSBC - London Bridge",
+        "image": "https://www.hsbc.co.uk/content/dam/hsbc/gb/images/logos/hsbc-uk.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "London bridge 15",
+          "addressLocality": "London",
+          "postalCode": "123456",
+          "addressCountry": "UK"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "[+44-12334455]",
+          "email": "branchName@hsbc.com"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.5074,
+          "longitude": 0.1278
+        },
+        "url": "www.hsbc.com",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "11:30",
+            "closes": "22:00"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Cleaning services",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "House Cleaning",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Apartment light cleaning"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "House light cleaning up to 2 bedrooms"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "House light cleaning 3+ bedrooms"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    </script>
+  </body>
+</html>
